@@ -59,7 +59,7 @@ router.put("/task/:id", (req, res) => {
     if(!req.body.name){
         res.status(400)
         res.json({
-            error: "Bad Data"
+            error: "Mistake in Data"
         })
     } else {
         Task.update(
